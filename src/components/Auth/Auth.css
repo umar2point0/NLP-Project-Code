@@ -1,0 +1,345 @@
+.auth-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+.input-field select {
+  height: 45px; 
+}
+
+.input-field.select-field::after {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #666;
+}
+
+.country-select:focus {
+  outline: none;
+  border-color: #4285f4;
+}
+
+.country-select {
+  width: 100%;
+  padding: 12px 12px 12px 40px; /* Extra padding for the icon */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  appearance: none; /* Removes default dropdown arrow in some browsers */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.auth-forms {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f0f0f0;
+}
+
+.auth-slogan{
+  flex: 1;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: white;
+  background: none;
+}
+
+.form-container h1 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.form-group {
+  width: 90%;
+  margin-bottom: 1.5rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  width: 50%;
+  padding: 0.75rem;
+  background-color: #4a6bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  margin-left: 80px;
+}
+
+.submit-btn:hover {
+  background-color: #3a5bef;
+}
+
+.links-btn {
+  margin-left: 140px;
+  margin-top: 15px;
+  background: none;
+  border: none;
+  color: #4a6bff;
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+} 
+
+.link-btn {
+  margin-top: 15px;
+  background: none;
+  border: none;
+  color: #4a6bff;
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+}
+
+.link-btn:hover {
+  text-decoration: underline;
+}
+
+.back-btn {
+  width: 50%;
+  padding: 0.75rem;
+  background-color: transparent;
+  color: #4a6bff;
+  border: 1px solid #4a6bff;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 80px;
+}
+
+.back-btn:hover {
+  background-color: #f0f4ff;
+}
+
+.switch-form {
+  text-align: center;
+  margin-top: 1rem;
+  color: #666;
+}
+
+/* Additional styles specific to the ResetPassword component */
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-icons {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 1rem;
+}
+
+.input-with-icon input {
+  width: 100%;
+  padding: 12px 12px 12px 40px; /* Extra padding on left for icon */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input-with-icon input:focus {
+  outline: none;
+  border-color: #4285f4;
+}
+
+.input-icon {
+  position: absolute;
+  left: 10px;
+  color: #777;
+}
+
+.input-field input {
+  padding-left: 35px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: #777;
+}
+
+.auth-primary-btn {
+  width: 50%;
+  padding: 0.75rem;
+  background-color: #4a6bff;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 38, 253, 0.1);
+  transition: box-shadow 0.5s ease;
+  margin-left: 80px;
+}
+
+.auth-primary-btn:hover {
+  background-color: #3a5bef;
+  box-shadow: 0 6px 8px rgba(0, 38, 255, 0.1);
+}
+
+.auth-secondary-btn {
+  width: 50%;
+  padding: 0.75rem;
+  background-color: transparent;
+  color: #4a6bff;
+  border: 1px solid #4a6bff;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 80px;
+}
+
+.auth-secondary-btn:hover {
+  background-color: #f0f4ff;
+}
+
+/* Social Login Styles */
+.social-login {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+  margin: 0 0.5rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.social-btn.facebook {
+  color: #1877F2;
+  border-color: #1877F2;
+}
+
+.social-btn.twitter {
+  color: #1DA1F2;
+  border-color: #1DA1F2;
+}
+
+.social-btn.instagram {
+  color: #E4405F;
+  border-color: #E4405F;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .auth-container {
+    flex-direction: column;
+  }
+  
+  .auth-slogan {
+    order: -1;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .form-container {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-icons {
+    gap: 0.5rem;
+  }
+  
+  .social-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+}

@@ -1,0 +1,22 @@
+.stats {
+    padding: 3rem 2rem;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .stat-card {
+    display: inline-block;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+  }
+  
+  .stat-card h2 {
+    font-size: 3rem;
+    color: #4a6bff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-card p {
+    color: #666;
+  }
